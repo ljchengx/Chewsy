@@ -91,9 +91,10 @@ class _HomePageState extends State<HomePage> {
               ],
           ] else ...[
             const SizedBox(height: 18),
-            if (widget.records.isEmpty)
-              const EmptyPaper(text: '还没有吃饭记录，先记下第一家店。')
-            else ...[
+            if (widget.records.isEmpty) ...[
+              const HomeEmptyState(),
+              const SizedBox(height: 20),
+            ] else ...[
               GestureDetector(
                 onTap: widget.onOpenReport,
                 child: HeroFoodCard(record: widget.records.first),
@@ -203,6 +204,47 @@ class _HomePageState extends State<HomePage> {
         _searchError = '搜索出了点问题，请再试一次。';
       });
     }
+  }
+}
+
+class HomeEmptyState extends StatelessWidget {
+  const HomeEmptyState({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return PaperPanel(
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+      child: Row(
+        children: [
+          Container(
+            width: 54,
+            height: 54,
+            decoration: BoxDecoration(
+              color: kLime,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: const Icon(Icons.restaurant_outlined, size: 30),
+          ),
+          const SizedBox(width: 14),
+          const Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '还没有吃饭记录',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
+                ),
+                SizedBox(height: 4),
+                Text(
+                  '先选一个判词，记下第一家店。',
+                  style: TextStyle(color: kMuted, fontSize: 14),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 

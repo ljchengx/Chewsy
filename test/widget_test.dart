@@ -19,6 +19,8 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('好吃不'), findsOneWidget);
+    expect(find.text('还没有吃饭记录'), findsOneWidget);
+    expect(find.text('先选一个判词，记下第一家店。'), findsOneWidget);
 
     await tester.tap(find.text('记一口'));
     await tester.pumpAndSettle();
