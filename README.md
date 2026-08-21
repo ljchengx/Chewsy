@@ -1,7 +1,7 @@
 # 好吃不 Chewsy
 
 <p align="center">
-  <img src="docs/1.png" alt="好吃不首页设计图" width="360">
+  <img src="docs/screenshots/home.png" alt="Android 真机首页" width="360">
 </p>
 
 <p align="center">
@@ -27,9 +27,9 @@
 ## 一次记录，解决下一次选择
 
 <p align="center">
-  <img src="docs/2.png" alt="先选择判词" width="220">
-  <img src="docs/6.png" alt="填写到店记录" width="220">
-  <img src="docs/3.png" alt="查看店铺历史" width="220">
+  <img src="docs/screenshots/record.png" alt="Android 真机记一口页面" width="220">
+  <img src="docs/screenshots/restaurant-detail.png" alt="Android 真机记录详情" width="220">
+  <img src="docs/screenshots/restaurant-history.png" alt="Android 真机吃饭宇宙" width="220">
 </p>
 
 1. **先选判词**：种草、观望、踩雷，先把当下感受留下来。
@@ -66,8 +66,8 @@
 首页把最近吃过的记录和快速判词放在一起。想起一家店时，可以从这里直接开始搜索。
 
 <p align="center">
-  <img src="docs/1.png" alt="首页" width="300">
-  <img src="docs/4.png" alt="吃饭宇宙" width="300">
+  <img src="docs/screenshots/home.png" alt="真实首页" width="300">
+  <img src="docs/screenshots/restaurant-history.png" alt="真实吃饭宇宙" width="300">
 </p>
 
 ### 记一口：先判词，再写理由
@@ -75,8 +75,8 @@
 记录流程从最重要的判断开始，不要求你在饭桌上完成一份长问卷。店名、菜名、照片和理由都可以按当下记忆逐步补齐。
 
 <p align="center">
-  <img src="docs/2.png" alt="判词选择" width="280">
-  <img src="docs/6.png" alt="记录详情" width="280">
+  <img src="docs/screenshots/record.png" alt="真实判词选择" width="280">
+  <img src="docs/screenshots/edit.png" alt="真实记录编辑" width="280">
 </p>
 
 ### 店铺历史：只看发生过什么
@@ -84,7 +84,8 @@
 同一家店的每次到店记录集中在一起。你可以看到当时吃了什么、为什么种草或踩雷，而不是一个脱离上下文的系统结论。
 
 <p align="center">
-  <img src="docs/3.png" alt="店铺历史" width="320">
+  <img src="docs/screenshots/restaurant-detail.png" alt="真实店铺记录详情" width="320">
+  <img src="docs/screenshots/restaurant-history.png" alt="真实店铺历史浏览" width="320">
 </p>
 
 ### 数据中心：你的吃饭档案
@@ -92,27 +93,10 @@
 数据中心用于回看自己的记录规模和数据管理。备份、导入等能力会继续完善，但不抢占“记录和避坑”这条主线。
 
 <p align="center">
-  <img src="docs/5.png" alt="数据中心" width="320">
+  <img src="docs/screenshots/data-center.png" alt="真实数据中心" width="320">
 </p>
 
-<details>
-<summary>查看完整设计图</summary>
-
-<p align="center">
-  <img src="docs/1.png" alt="设计图 1" width="220">
-  <img src="docs/2.png" alt="设计图 2" width="220">
-  <img src="docs/3.png" alt="设计图 3" width="220">
-  <img src="docs/4.png" alt="设计图 4" width="220">
-  <img src="docs/5.png" alt="设计图 5" width="220">
-  <img src="docs/6.png" alt="设计图 6" width="220">
-  <img src="docs/7.png" alt="设计图 7" width="220">
-  <img src="docs/8.png" alt="设计图 8" width="220">
-  <img src="docs/9.png" alt="设计图 9" width="220">
-  <img src="docs/10.png" alt="设计图 10" width="220">
-  <img src="docs/11.png" alt="设计图 11" width="220">
-</p>
-
-</details>
+以上截图来自 Android 真机运行验证；设计稿和技术说明仍保留在 `docs/` 目录中。
 
 ## 产品模型
 
