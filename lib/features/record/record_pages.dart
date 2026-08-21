@@ -212,37 +212,36 @@ class HomeEmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PaperPanel(
-      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
-      child: Row(
-        children: [
-          Container(
-            width: 54,
-            height: 54,
-            decoration: BoxDecoration(
-              color: kLime,
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: const Icon(Icons.restaurant_outlined, size: 30),
-          ),
-          const SizedBox(width: 14),
-          const Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '还没有吃饭记录',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
+    return SizedBox(
+      height: 310,
+      child: PaperPanel(
+        padding: const EdgeInsets.all(18),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 76,
+                height: 76,
+                decoration: BoxDecoration(
+                  color: kLime,
+                  borderRadius: BorderRadius.circular(22),
                 ),
-                SizedBox(height: 4),
-                Text(
-                  '先选一个判词，记下第一家店。',
-                  style: TextStyle(color: kMuted, fontSize: 14),
-                ),
-              ],
-            ),
+                child: const Icon(Icons.restaurant_outlined, size: 40),
+              ),
+              const SizedBox(height: 18),
+              const Text(
+                '还没有吃饭记录',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 7),
+              const Text(
+                '先选一个判词，记下第一家店。',
+                style: TextStyle(color: kMuted, fontSize: 15),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
