@@ -1,0 +1,6 @@
+# Copy this file to key.properties and fill in your local release credentials.
+# Never commit key.properties or the keystore file.
+storePassword=replace-with-your-store-password
+keyPassword=replace-with-your-key-password
+keyAlias=key0
+storeFile=release-key.jks
